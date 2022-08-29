@@ -1,0 +1,19 @@
+function print(nilai) {
+  let data = Number(nilai);
+  console.log(data);
+  console.log(isNaN(data));
+  if (isNaN(data)) {
+    console.log(`data harus number`);
+  } else {
+    let str = "";
+    for (i = data; i > 0; i--) {
+      for (j = 1; j <= i; j++) {
+        str += ` ${j}`;
+      }
+      str += "\n";
+    }
+    console.log(str);
+  }
+}
+
+console.log(print("cf"));

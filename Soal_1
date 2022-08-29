@@ -1,0 +1,18 @@
+const biodata = {
+  nama: "M. Ikhsan Azis Pane",
+  age: Number(23),
+  hobies: ["menggambar", "badminton", "Mendengar musik]"],
+  scholList: [
+    ["SMAN 1 Padang", 2013, 2016, "science"],
+    ["SMPN 2 Padang", 2010, 2013, null],
+    ["SMDN 13 Padang", 20110, 2006, null],
+  ],
+  Skill: [
+    { skillName: "html", level: "beginner" },
+    { skillName: "css", level: "beginner" },
+    { skillName: "javascript", level: "beginner" },
+  ],
+  interestInCoding: true,
+};
+
+console.log(biodata);

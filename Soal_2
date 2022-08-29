@@ -1,0 +1,31 @@
+function nilai(bind, bing, ipa, mtk) {
+  let bahasa = Number(bind);
+  let english = Number(bing);
+  let science = Number(ipa);
+  let math = Number(mtk);
+
+  kondisi1 = isNaN(bahasa) == true;
+  kondisi2 = isNaN(english) == true;
+  kondisi3 = isNaN(science) == true;
+  kondisi4 = isNaN(math) == true;
+
+  if (kondisi1 || kondisi2 || kondisi3 || kondisi4) {
+    console.log(`Periksa lagi input`);
+  } else {
+    const avg = (bahasa + english + science + math) / 4;
+    console.log(avg);
+    if (avg >= 90 && avg <= 100) {
+      console.log(`Grade A`);
+    } else if (avg >= 80 && avg < 90) {
+      console.log(`Grade B`);
+    } else if (avg >= 70 && avg < 80) {
+      console.log(`Grade C`);
+    } else if (avg >= 60 && avg < 70) {
+      console.log(`Grade D`);
+    } else {
+      console.log(`Grade E`);
+    }
+  }
+}
+
+nilai(80, 86, 90);
